@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Scorer</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="goals">Goals</string>
+    <string name="reset">Reset</string>
+    <string name="reset_both">Reset Both</string>
+    <string name="shots">Shots</string>
+    <string name="reset_team_2">Reset Team 2</string>
+    <string name="reset_team_1">Reset Team 1</string>
+    <string name="red_cards">Red Cards</string>
+    <string name="yellow_cards">Yellow cards</string>
+    <string name="fouls">Fouls</string>
+    <string name="offsides">Offsides</string>
+    <string name="corners">Corners</string>
+    <string name="on_target">On target</string>
+</resources>
