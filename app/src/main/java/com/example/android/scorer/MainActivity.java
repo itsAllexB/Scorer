@@ -24,12 +24,90 @@ public class MainActivity extends AppCompatActivity {
     int yellowCardsTeam2 = 0;
     int redCardsTeam2= 0;
 
+    static final String STATE_SCORE_TEAM_1 = "scoreteam1";
+    static final String STATE_SCORE_TEAM_2 = "scoreteam2";
+    static final String STATE_SHOTS_TEAM_1 = "shotsteam1";
+    static final String STATE_SHOTS_TEAM_2 = "shotsteam2";
+    static final String STATE_SHOTS_ON_TARGET_TEAM_1 = "shotsontargetteam1";
+    static final String STATE_SHOTS_ON_TARGET_TEAM_2 = "shotsontargetteam2";
+    static final String STATE_CORNERS_TEAM_1 = "cornersteam1";
+    static final String STATE_CORNERS_TEAM_2 = "cornersteam2";
+    static final String STATE_OFFSIDES_TEAM_1 = "offsidesteam1";
+    static final String STATE_OFFSIDES_TEAM_2 = "offsidesteam2";
+    static final String STATE_FOULS_TEAM_1 = "foulsteam1";
+    static final String STATE_FOULS_TEAM_2 = "foulsteam2";
+    static final String STATE_YELLOW_CARDS_TEAM_1 = "yellowcardsteam1";
+    static final String STATE_YELLOW_CARDS_TEAM_2 = "yellowcardsteam2";
+    static final String STATE_RED_CARDS_TEAM_1 = "redcardsteam1";
+    static final String STATE_RED_CARDS_TEAM_2 = "redcardsteam2";
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (savedInstanceState != null) {
+            // Restore value of members from saved state
+            scoreTeam1 = savedInstanceState.getInt(STATE_SCORE_TEAM_1);
+            scoreTeam2 = savedInstanceState.getInt(STATE_SCORE_TEAM_2);
+            shotsTeam1 = savedInstanceState.getInt(STATE_SHOTS_TEAM_1);
+            shotsTeam2 = savedInstanceState.getInt(STATE_SHOTS_TEAM_2);
+            shotsOnTargetTeam1 = savedInstanceState.getInt(STATE_SHOTS_ON_TARGET_TEAM_1);
+            shotsOnTargetTeam2 = savedInstanceState.getInt(STATE_SHOTS_ON_TARGET_TEAM_2);
+            cornersTeam1 = savedInstanceState.getInt(STATE_CORNERS_TEAM_1);
+            cornersTeam2 = savedInstanceState.getInt(STATE_CORNERS_TEAM_2);
+            offsidesTeam1 = savedInstanceState.getInt(STATE_OFFSIDES_TEAM_1);
+            offsidesTeam2 = savedInstanceState.getInt(STATE_OFFSIDES_TEAM_2);
+            foulsTeam1 = savedInstanceState.getInt(STATE_FOULS_TEAM_1);
+            foulsTeam2 = savedInstanceState.getInt(STATE_FOULS_TEAM_2);
+            yellowCardsTeam1 = savedInstanceState.getInt(STATE_YELLOW_CARDS_TEAM_1);
+            yellowCardsTeam2 = savedInstanceState.getInt(STATE_YELLOW_CARDS_TEAM_2);
+            redCardsTeam1 = savedInstanceState.getInt(STATE_RED_CARDS_TEAM_1);
+            redCardsTeam2 = savedInstanceState.getInt(STATE_RED_CARDS_TEAM_2);
+        }
         setContentView(R.layout.activity_main);
+        displayForTeam1(scoreTeam1);
+        displayForTeam1small(scoreTeam1);
+        displayForTeam1Shots(shotsTeam1);
+        displayForTeam1ShotsOnTarget(shotsOnTargetTeam1);
+        displayForTeam1Corners(cornersTeam1);
+        displayForTeam1Offsides(offsidesTeam1);
+        displayForTeam1Fouls(foulsTeam1);
+        displayForTeam1YellowCards(yellowCardsTeam1);
+        displayForTeam1RedCards(redCardsTeam1);
+        displayForTeam2(scoreTeam2);
+        displayForTeam2small(scoreTeam2);
+        displayForTeam2Shots(shotsTeam2);
+        displayForTeam2ShotsOnTarget(shotsOnTargetTeam2);
+        displayForTeam2Corners(cornersTeam2);
+        displayForTeam2Offsides(offsidesTeam2);
+        displayForTeam2Fouls(foulsTeam2);
+        displayForTeam2YellowCards(yellowCardsTeam2);
+        displayForTeam2RedCards(redCardsTeam2);
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save the user's current game state
+        savedInstanceState.putInt(STATE_SCORE_TEAM_1, scoreTeam1);
+        savedInstanceState.putInt(STATE_SCORE_TEAM_2, scoreTeam2);
+        savedInstanceState.putInt(STATE_SHOTS_TEAM_1, shotsTeam1);
+        savedInstanceState.putInt(STATE_SHOTS_TEAM_2, shotsTeam2);
+        savedInstanceState.putInt(STATE_SHOTS_ON_TARGET_TEAM_1, shotsOnTargetTeam1);
+        savedInstanceState.putInt(STATE_SHOTS_ON_TARGET_TEAM_2, shotsOnTargetTeam2);
+        savedInstanceState.putInt(STATE_CORNERS_TEAM_1, cornersTeam1);
+        savedInstanceState.putInt(STATE_CORNERS_TEAM_2, cornersTeam2);
+        savedInstanceState.putInt(STATE_OFFSIDES_TEAM_1, offsidesTeam1);
+        savedInstanceState.putInt(STATE_OFFSIDES_TEAM_1, offsidesTeam2);
+        savedInstanceState.putInt(STATE_FOULS_TEAM_1, foulsTeam1);
+        savedInstanceState.putInt(STATE_FOULS_TEAM_2, foulsTeam2);
+        savedInstanceState.putInt(STATE_YELLOW_CARDS_TEAM_1, yellowCardsTeam1);
+        savedInstanceState.putInt(STATE_YELLOW_CARDS_TEAM_2, yellowCardsTeam2);
+        savedInstanceState.putInt(STATE_RED_CARDS_TEAM_1, redCardsTeam1);
+        savedInstanceState.putInt(STATE_RED_CARDS_TEAM_2, redCardsTeam2);
+        // Always call the superclass so it can save the view hierarchy state
+        super.onSaveInstanceState(savedInstanceState);
+    }
     /**
      *
      * Button presses for Team 1.

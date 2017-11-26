@@ -34,6 +34,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:contentDescription="@null"
                     android:id="@+id/team_logo_1"
                     android:layout_width="73dp"
                     android:layout_height="73dp"
@@ -59,10 +60,11 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginEnd="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_toLeftOf="@+id/between"
+                android:layout_toStartOf="@+id/between"
                 android:text="0"
                 android:textColor="#7E7E7E"
-                android:textSize="48sp" />
+                android:textSize="48sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/between"
@@ -70,19 +72,21 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:text=":"
-                android:textSize="48sp" />
+                android:textSize="48sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/score_team_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_toRightOf="@+id/between"
+                android:layout_toEndOf="@+id/between"
                 android:textColor="#7E7E7E"
                 android:text="0"
-                android:textSize="48sp" />
+                android:textSize="48sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -94,7 +98,8 @@
                 android:text="@string/goals"
                 android:textAllCaps="true"
                 android:textColor="#878A8B"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:ignore="RelativeOverlap" />
 
             <LinearLayout
                 android:id="@+id/team_2_name_logo"
@@ -106,6 +111,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:contentDescription="@null"
                     android:id="@+id/team_logo_2"
                     android:layout_width="73dp"
                     android:layout_height="73dp"
@@ -160,14 +166,16 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1PointsTeam1"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="5dp"
@@ -184,7 +192,8 @@
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1PointsTeam2"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/score_team_2_small"
@@ -195,7 +204,8 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -212,14 +222,16 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1ShotTeam1"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="5dp"
@@ -236,7 +248,8 @@
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1ShotTeam2"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/shots_team_2"
@@ -247,7 +260,8 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -264,14 +278,16 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1ShotOnTargetTeam1"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="5dp"
@@ -288,7 +304,8 @@
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1ShotOnTargetTeam2"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/shots_team_2_on_target"
@@ -299,7 +316,8 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -316,14 +334,16 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1CornerTeam1"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="5dp"
@@ -340,7 +360,8 @@
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1CornerTeam2"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/corners_team_2"
@@ -369,14 +390,16 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1OffsideTeam1"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="5dp"
@@ -393,7 +416,8 @@
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1OffsideTeam2"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/offsides_team_2"
@@ -404,7 +428,8 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -421,14 +446,16 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1FoulTeam1"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="5dp"
@@ -445,7 +472,8 @@
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1FoulTeam2"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/fouls_team_2"
@@ -456,7 +484,8 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -473,14 +502,16 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1YellowCardTeam1"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="5dp"
@@ -497,7 +528,8 @@
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1YellowCardTeam2"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/yellow_cards_team_2"
@@ -508,7 +540,8 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -526,14 +559,16 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
 
                     <Button
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1RedCardTeam1"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:layout_width="5dp"
@@ -550,7 +585,8 @@
                         android:layout_width="33dp"
                         android:layout_height="36dp"
                         android:onClick="add1RedCardTeam2"
-                        android:text="+" />
+                        android:text="+"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/red_cards_team_2"
@@ -561,7 +597,8 @@
                         android:gravity="center"
                         android:text="0"
                         android:textColor="#878A8B"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
 
