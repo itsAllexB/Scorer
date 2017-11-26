@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putInt(STATE_CORNERS_TEAM_1, cornersTeam1);
         savedInstanceState.putInt(STATE_CORNERS_TEAM_2, cornersTeam2);
         savedInstanceState.putInt(STATE_OFFSIDES_TEAM_1, offsidesTeam1);
-        savedInstanceState.putInt(STATE_OFFSIDES_TEAM_1, offsidesTeam2);
+        savedInstanceState.putInt(STATE_OFFSIDES_TEAM_2, offsidesTeam2);
         savedInstanceState.putInt(STATE_FOULS_TEAM_1, foulsTeam1);
         savedInstanceState.putInt(STATE_FOULS_TEAM_2, foulsTeam2);
         savedInstanceState.putInt(STATE_YELLOW_CARDS_TEAM_1, yellowCardsTeam1);
