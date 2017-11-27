@@ -11,4 +11,4 @@ For the people who are new to github, if you want to access or see:
 - Portrait mode
 ![Alt text](Screenshots/Screenshot_1511796523.png?raw=true)
 - Landscape mode
-![Alt text](Screenshots/Screenshot_1511796543.png)
+![Alt text](Screenshots/Screenshot_1511796543.png?raw=true)
